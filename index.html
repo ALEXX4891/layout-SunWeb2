@@ -8,67 +8,77 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+
+    <!-- - Пункты меню при наведении подчеркиваются и жирные
+    - Кнопки при наведении инвертируются по цвету (т.е. фон становится цветом шрифта, а шрифт становится цветом фона)
+    - Картинки (не иконки) в контенте скалируются 105% при наведении, но не выходя за пределы своих изначальных границ
+    - ссылки в контенте при наведении меняют цвет на оранженый -->
+
+
     <h1 class="visually-hidden">Stoff. Центр мебельных технологий. Изготовление мебели под заказ.</h1>
     <header class="header">
-      <div class="header__container container">
-        <a class="header__logo" href="#">
-          <img class="header__logo-img" src="img/Logo.png" alt="Логотип компании Евробетон">
-          <p>Центр мебельных технологий</p>
-        </a>
-
-        <nav class="header__nav nav">
-          <ul class="nav__list list-reset flex">
-              <li class="nav__item">
-                <a href="#" class="nav__link">
-                  Шкафы-купе
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">
-                  Торговая мебель
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">
-                  Кухни
-                </a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__link">
-                  Контакты
-                </a>
-              </li>
-          </ul>
-        </nav>
-      </div>
-
-      <a class="header__phone" href="tel:+73452547078">
-        +7 3452 54-70-78
-      </a> 
-      <button class="header__btn btn btn-reset">
-        Оставить заявку
-      </button>
-    </header>
-    <main class="main">
-      <section class="main__section banner">
-        <div class="container banner__container flex">
-          <div class="banner__wraper">
-            <h2>
-              Заказывайте кухню от производителя
-            </h2>
-            <p>
-              Высокое качество, профессиональный подход 
-              и креативные решения
-            </p>
-            <p>
-              Работаем по Тюмени и Тюменской области
-            </p>
-          </div>
-          <button class="banner__btn bnt btn-reset">
+        <div class="header__container container flex">          
+          <a class="header__logo flex" href="#">
+            <img class="header__logo-img" src="img/Logo.png" alt="Логотип компании Евробетон">
+            <p class="header__logo-text">Центр мебельных технологий</p>
+          </a>
+  
+          <nav class="header__nav nav flex">
+            <ul class="nav__list list-reset flex">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    Шкафы-купе
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    Торговая мебель
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    Кухни
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">
+                    Контакты
+                  </a>
+                </li>
+            </ul>
+          </nav>
+          <a class="header__phone" href="tel:+73452547078">
+            +7 3452 54-70-78
+          </a> 
+          <button class="header__btn btn btn-reset">
             Оставить заявку
           </button>
         </div>
-      </section>
+
+        <section class="header__section banner">
+          <div class="container banner__container">
+            <div class="banner__wraper flex">
+              <h2 class="banner__title">
+                Заказывайте кухню от производителя
+              </h2>
+              <p class="banner__desc">
+                Высокое качество, профессиональный подход 
+                и креативные решения
+              </p>
+              <p class="banner__desc banner__desc_bold">
+                Работаем по Тюмени и Тюменской области
+              </p>
+            </div>
+            <div class="baner__bottom flex">
+              <button class="banner__btn btn btn-reset">
+                Оставить заявку
+              </button>
+            </div>
+          </div>
+        </section>
+    </header>
+    <main class="main">
+
       <section class="main__section kitchens">
         <div class="container kitchens__container">
           <h2 class="kitchens__title title">
@@ -107,11 +117,11 @@
           <h2 class="kitchens__title title">
             Стили кухонь
           </h2>
-          <div class="kitchens__cards flex">
+          <div class="kitchens__cards kitchens__cards_style flex">
             <div class="kitchens__card card">
               <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
               <h3 class="card__title">
-                Линейные
+                Хайтек
               </h3>
               <p class="card__desc">
                 Данный стиль кухни придаст вашей квартире современный вид                
@@ -136,9 +146,9 @@
               </p>
             </div>
           </div>
-          <div class="kitchens__big-cards">
-            <div class="kitchens__card card">
-              <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+          <div class="kitchens__big-cards flex">
+            <div class="kitchens__big-card card card_big">
+              <img class="card__img card__img_big" src="./img/Line_1.jpg" alt="кухня">
               <h3 class="card__title">
                 Прованс
               </h3>
@@ -146,7 +156,7 @@
                 Этот стиль порадует истинного ценителя провинциального французского интерьера, привнеся нотки деревенского шарма, 
                 сохранив при этом изящность французского дома              </p>
             </div>
-            <div class="kitchens__card card">
+            <div class="kitchens__big-card card card_big">
               <img class="card__img card__img_big" src="./img/Angle_1.jpg" alt="кухня">
               <h3 class="card__title">
                 Японский стиль
@@ -167,8 +177,8 @@
             в течение одного часа
           </p>
 
-          <form class="form-block__form form flex" action="#">
-            <fieldset class="form__fieldset">
+          <form class="form-block__form form" action="#">
+            <fieldset class="form__fieldset flex">
                 <legend hidden>Форма для заявки</legend>    
                 <ul class="form__list list-reset flex" aria-label="Форма для заявки">
                     <li class="form__item">
@@ -192,7 +202,7 @@
       </section>
 
       <section class="main__section materials">
-        <div class="contaier materials__container">
+        <div class="container materials__container">
           <h2 class="materials__title title">
             Материал фасада кухонь
           </h2>
@@ -263,7 +273,7 @@
         <div class="container servises__container flex">
           <div class="servises__img servises__img_about">
           </div>
-          <div class="servises__info">
+          <div class="servises__info flex">
             <h2 class="servises__title title">
               О кухнях
             </h2>
@@ -280,7 +290,7 @@
               Заказать
             </button>
           </div>
-          <div class="servises__info">
+          <div class="servises__info flex">
             <h2 class="servises__title title">
               Доставка
             </h2>
@@ -296,7 +306,7 @@
           </div>
           <div class="servises__img servises__img_production">
           </div>
-          <div class="servises__info">
+          <div class="servises__info flex">
             <h2 class="servises__title title">
               У нас своё 
               производство
@@ -318,7 +328,7 @@
         </div>
       </section>
       <section class="main__section offer">
-        <div class="contaier offer__container">
+        <div class="container offer__container">
           <h2 class="offer__title title">
             Что мы предлагаем
           </h2>
@@ -351,7 +361,7 @@
                 </svg>
               </div>
               <h3 class="smoll-card__title">
-                Подстроимся под бюджет по экскизу
+                Подстроимся под бюджет
               </h3>
               <p class="smoll-card__desc">
                 Для  эскиза подберем материалы эконом, стандарт или премиум класса              
