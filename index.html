@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заголовок</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
@@ -17,7 +17,7 @@
 
     <h1 class="visually-hidden">Stoff. Центр мебельных технологий. Изготовление мебели под заказ.</h1>
     <header class="header">
-        <div class="header__container container flex">          
+        <div class="header__top-block flex">          
           <a class="header__logo flex" href="#">
             <img class="header__logo-img" src="img/Logo.png" alt="Логотип компании Евробетон">
             <p class="header__logo-text">Центр мебельных технологий</p>
@@ -53,14 +53,24 @@
           <button class="header__btn btn btn-reset">
             Оставить заявку
           </button>
+
+          <button class="header__burger btn burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>   
         </div>
 
-        <section class="header__section banner">
+        <section class="header__bottom-block banner">
           <div class="container banner__container">
-            <div class="banner__wraper flex">
+            <div class="banner__top flex">
               <h2 class="banner__title">
                 Заказывайте кухню от производителя
               </h2>
+              <h2 class="banner__title banner__title_mobile">
+                Изготовление уникальных
+                кухонь на заказ
+            </h2>
               <p class="banner__desc">
                 Высокое качество, профессиональный подход 
                 и креативные решения
@@ -70,7 +80,7 @@
               </p>
             </div>
             <div class="baner__bottom flex">
-              <button class="banner__btn btn btn-reset">
+              <button class="banner__btn btn btn_gb_ogange btn-reset">
                 Оставить заявку
               </button>
             </div>
@@ -86,7 +96,10 @@
           </h2>
           <div class="kitchens__cards flex">
             <div class="kitchens__card card">
-              <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+              <div class="card__img-wraper">
+
+                <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Линейные
               </h3>
@@ -95,7 +108,10 @@
               </p>
             </div>
             <div class="kitchens__card card">
-              <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                
+                <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Угловые
               </h3>
@@ -104,7 +120,10 @@
               </p>
             </div>
             <div class="kitchens__card card">
-              <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                
+                <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Островные
               </h3>
@@ -119,7 +138,10 @@
           </h2>
           <div class="kitchens__cards kitchens__cards_style flex">
             <div class="kitchens__card card">
-              <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+                
+              </div>
               <h3 class="card__title">
                 Хайтек
               </h3>
@@ -128,7 +150,10 @@
               </p>
             </div>
             <div class="kitchens__card card">
-              <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                
+                <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Классика
               </h3>
@@ -137,7 +162,10 @@
               </p>
             </div>
             <div class="kitchens__card card">
-              <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                
+                <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Неоклассика
               </h3>
@@ -148,7 +176,9 @@
           </div>
           <div class="kitchens__big-cards flex">
             <div class="kitchens__big-card card card_big">
-              <img class="card__img card__img_big" src="./img/Line_1.jpg" alt="кухня">
+              <div class="card__img-wraper card__img-wraper_big">
+                <img class="card__img card__img_big" src="./img/Line_1.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Прованс
               </h3>
@@ -157,7 +187,9 @@
                 сохранив при этом изящность французского дома              </p>
             </div>
             <div class="kitchens__big-card card card_big">
-              <img class="card__img card__img_big" src="./img/Angle_1.jpg" alt="кухня">
+              <div class="card__img-wraper card__img-wraper_big">
+                <img class="card__img card__img_big" src="./img/Angle_1.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Японский стиль
               </h3>
@@ -183,17 +215,17 @@
                 <ul class="form__list list-reset flex" aria-label="Форма для заявки">
                     <li class="form__item">
                     <label>
-                        <input class="form__input" type="text" name="name"
+                        <input class="form__input input" type="text" name="name"
                         placeholder="Имя" required>
                     </label>
                     </li>
                     <li class="form__item">
                     <label>
-                        <input class="form__input form__input--phone" type="tel" name="phone" placeholder="Телефон" required>
+                        <input class="form__input input" type="tel" name="phone" placeholder="Телефон" required>
                     </label>
                     </li>
                     <li class="form__item">
-                    <input class="btn btn-reset form__btn" type="submit" value="Отправить">
+                    <input class="btn btn_gb_ogange btn-reset form__btn" type="submit" value="Отправить">
                     </li>
                 </ul>
             </fieldset>
@@ -208,7 +240,9 @@
           </h2>
           <div class="materials__cards flex">
             <div class="materials__card card">
-              <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Плёнка
               </h3>
@@ -217,7 +251,9 @@
               </p>
             </div>
             <div class="materials__card card">
-              <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Древесная стружка
               </h3>
@@ -227,7 +263,9 @@
               </p>
             </div>
             <div class="materials__card card">
-              <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Шпон
               </h3>
@@ -237,7 +275,9 @@
               </p>
             </div>
             <div class="materials__card card">
-              <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Массив
               </h3>
@@ -247,7 +287,9 @@
               </p>
             </div>
             <div class="materials__card card">
-              <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Пластик
               </h3>
@@ -255,7 +297,9 @@
                 Пластик отлично вписывается во все стили дизайна интерьера и позволяет воплотить различные дизайнерские фантазии            
               </div>
             <div class="materials__card card">
-              <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+              <div class="card__img-wraper">
+                <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+              </div>
               <h3 class="card__title">
                 Эмаль
               </h3>
@@ -273,7 +317,7 @@
         <div class="container servises__container flex">
           <div class="servises__img servises__img_about">
           </div>
-          <div class="servises__info flex">
+          <div class="servises__info servises__info_about servises__info_ordered_2 flex">
             <h2 class="servises__title title">
               О кухнях
             </h2>
@@ -286,11 +330,11 @@
             <p class="servises__text text">
               У нас вы найдете более 1000 цветов фартуков с фотопечатью и более 100 вариантов дверных ручек, разновидностей фурнитуры, цветов столешниц, фасадов и стеновых изделий.
             </p>
-            <button class="servises__btn btn btn-reset">
+            <button class="servises__btn btn btn_gb_ogange btn-reset">
               Заказать
             </button>
           </div>
-          <div class="servises__info flex">
+          <div class="servises__info servises__info_shipping servises__info_ordered_4 flex">
             <h2 class="servises__title title">
               Доставка
             </h2>
@@ -306,7 +350,7 @@
           </div>
           <div class="servises__img servises__img_production">
           </div>
-          <div class="servises__info flex">
+          <div class="servises__info servises__info_production servises__info_ordered_6 flex">
             <h2 class="servises__title title">
               У нас своё 
               производство
@@ -321,7 +365,7 @@
               к директору компании через сайт, 
               либо по телефону +7 345 254 7078.
             </p>
-            <button class="servises__btn btn btn-reset">
+            <button class="servises__btn btn btn_gb_ogange btn-reset">
               Записаться
             </button>
           </div>
