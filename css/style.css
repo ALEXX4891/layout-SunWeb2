@@ -874,19 +874,16 @@
             font-size: 20px;
             font-weight: 500;
             line-height: 26px; /* 130% */
-            text-transform: unset;
-    
+            text-transform: unset;    
         }
     
         .banner__container {
             padding: 0;
-            /* padding-top: 10px; */
         }
     
         .banner__top {
             padding: 111px 0 0;
             margin-bottom: 0;
-            /* height: 400px; */
         }
     
         .banner__desc {
@@ -921,6 +918,7 @@
             padding-bottom: 100px;
             background-color: var(--Grey);
         }
+
         .baner {
             background-color: var(--Grey);
         }
@@ -960,11 +958,12 @@
         }
     
         .card {
-            margin-bottom: -34px;
+            min-height: 300px;
         }
     
         .kitchens__cards {
             margin-bottom: 32px;
+            gap: 18px;
         }
     
         .form-block__title {
@@ -1038,7 +1037,7 @@
         .servises__text {
             text-align: center;
             font-size: 12px;
-            line-height: 18px; /* 150% */
+            line-height: 18px;
             margin-bottom: 4px;
         }
     
@@ -1075,7 +1074,7 @@
             color: var(--Black);
             font-size: 14px;
             font-weight: 500;
-            line-height: 20px; /* 142.857% */
+            line-height: 20px;
         }
     
         .smoll-card__desc {
@@ -1094,7 +1093,6 @@
             color: var(--Backgrounde_1);
             font-size: 12px;
             font-weight: 500;
-            line-height: 32px; /* 266.667% */
             letter-spacing: 0.24px;
         }
     }
