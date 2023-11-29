@@ -5,100 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заголовок</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="intro">
+      <header class="intro__header header">          
+        <a class="header__logo" href="#">
+          <img class="header__img" width="181" height="37" src="img/Logo.png" alt="Логотип компании Евробетон">
+          <p class="header__text">Центр мебельных технологий</p>
+        </a>  
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  Шкафы-купе
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  Торговая мебель
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  Кухни
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">
+                  Контакты
+                </a>
+              </li>
+          </ul>
+        </nav>
+        <a class="header__phone" href="tel:+73452547078">
+          +7 3452 54-70-78
+        </a> 
+        <button class="header__btn btn">
+          Оставить заявку
+        </button>
 
-    <!-- - Пункты меню при наведении подчеркиваются и жирные
-    - Кнопки при наведении инвертируются по цвету (т.е. фон становится цветом шрифта, а шрифт становится цветом фона)
-    - Картинки (не иконки) в контенте скалируются 105% при наведении, но не выходя за пределы своих изначальных границ
-    - ссылки в контенте при наведении меняют цвет на оранженый -->
+        <button class="header__burger burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>   
+      </header>
 
-
-    <h1 class="visually-hidden">Stoff. Центр мебельных технологий. Изготовление мебели под заказ.</h1>
-    <header class="header">
-        <div class="header__top-block flex">          
-          <a class="header__logo flex" href="#">
-            <img class="header__logo-img" src="img/Logo.png" alt="Логотип компании Евробетон">
-            <p class="header__logo-text">Центр мебельных технологий</p>
-          </a>
-  
-          <nav class="header__nav nav flex">
-            <ul class="nav__list list-reset flex">
-                <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    Шкафы-купе
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    Торговая мебель
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    Кухни
-                  </a>
-                </li>
-                <li class="nav__item">
-                  <a href="#" class="nav__link">
-                    Контакты
-                  </a>
-                </li>
-            </ul>
-          </nav>
-          <a class="header__phone" href="tel:+73452547078">
-            +7 3452 54-70-78
-          </a> 
-          <button class="header__btn btn btn-reset">
-            Оставить заявку
-          </button>
-
-          <button class="header__burger btn btn-reset burger">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-          </button>   
-        </div>
-
-        <section class="header__bottom-block banner">
-          <div class="container banner__container">
-            <div class="banner__top flex">
-              <h2 class="banner__title">
-                Заказывайте кухню от производителя
-              </h2>
-              <h2 class="banner__title banner__title_mobile">
-                Изготовление уникальных
-                кухонь на заказ
-            </h2>
-              <p class="banner__desc">
-                Высокое качество, профессиональный подход 
-                и креативные решения
-              </p>
-              <p class="banner__desc banner__desc_bold">
-                Работаем по Тюмени и Тюменской области
-              </p>
-            </div>
-            <div class="baner__bottom flex">
-              <button class="banner__btn btn btn_gb_ogange btn-reset">
-                Оставить заявку
-              </button>
-            </div>
+      <div class="intro__banner banner">
+        <div class="banner__wrap">
+          <div class="banner__top">
+            <h1 class="banner__title">
+              Заказывайте кухню от производителя
+            </h1>
+            <h2 class="banner__title banner__title_mobile">
+              Изготовление уникальных
+              кухонь на заказ
+          </h2>
+            <p class="banner__desc">
+              Высокое качество, профессиональный подход 
+              и креативные решения
+            </p>
+            <p class="banner__desc banner__desc_bold">
+              Работаем по Тюмени и Тюменской области
+            </p>
           </div>
-        </section>
-    </header>
-    <main class="main">
+          <div class="banner__bottom">
+            <button class="banner__btn btn btn_gb_ogange">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <section class="main__section kitchens">
-        <div class="container kitchens__container">
-          <h2 class="kitchens__title title">
+    <main class="main">
+      <section class="main__products products">
+          <h2 class="products__title title">
             Виды кухонь
           </h2>
-          <div class="kitchens__cards flex">
-            <div class="kitchens__card card">
-              <div class="card__img-wraper">
+          <div class="products__list">
+            <div class="products__item card">
+              <div class="card__img-wrap">
 
-                <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+                <img class="card__img" width="360" height="230" src="./img/Line_1.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Линейные
@@ -107,10 +97,10 @@
                 Такой вид кухни подойдёт в случае, если вам необходимо сэкономить место в помещении
               </p>
             </div>
-            <div class="kitchens__card card">
-              <div class="card__img-wraper">
+            <div class="products__item card">
+              <div class="card__img-wrap">
                 
-                <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+                <img class="card__img" width="360" height="230" src="./img/Line_2.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Угловые
@@ -119,10 +109,10 @@
                 Угловая кухня позволит увеличить количество отсеков для посуды              
               </p>
             </div>
-            <div class="kitchens__card card">
-              <div class="card__img-wraper">
+            <div class="products__item card">
+              <div class="card__img-wrap">
                 
-                <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+                <img class="card__img" width="360" height="230" src="./img/Line_3.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Островные
@@ -132,14 +122,15 @@
               </p>
             </div>
           </div>
-
-          <h2 class="kitchens__title title">
+      </section>
+          <section class="main__products products main__products_pt_small">
+          <h2 class="products__title title">
             Стили кухонь
           </h2>
-          <div class="kitchens__cards kitchens__cards_style flex">
-            <div class="kitchens__card card">
-              <div class="card__img-wraper">
-                <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+          <div class="products__list">
+            <div class="products__item card">
+              <div class="card__img-wrap">
+                <img class="card__img" width="360" height="230" src="./img/Line_1.jpg" alt="кухня">
                 
               </div>
               <h3 class="card__title">
@@ -149,10 +140,10 @@
                 Данный стиль кухни придаст вашей квартире современный вид                
               </p>
             </div>
-            <div class="kitchens__card card">
-              <div class="card__img-wraper">
+            <div class="products__item card">
+              <div class="card__img-wrap">
                 
-                <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+                <img class="card__img" width="360" height="230" src="./img/Line_2.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Классика
@@ -161,10 +152,10 @@
                 Классический стиль подойдёт ценителям непревзойдённой мебели прошлых эпох
               </p>
             </div>
-            <div class="kitchens__card card">
-              <div class="card__img-wraper">
+            <div class="products__item card">
+              <div class="card__img-wrap">
                 
-                <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+                <img class="card__img" width="360" height="230" src="./img/Line_3.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Неоклассика
@@ -174,33 +165,34 @@
               </p>
             </div>
           </div>
-          <div class="kitchens__big-cards flex">
-            <div class="kitchens__big-card card card_big">
-              <div class="card__img-wraper card__img-wraper_big">
-                <img class="card__img card__img_big" src="./img/Line_1.jpg" alt="кухня">
+          </section>
+
+          <section class="main__products products main__products_pt_big">
+            <div class="products__list">
+              <div class="products__item card card_big">
+                <div class="card__img-wrap card__img-wrap_big">
+                  <img class="card__img" width="560" height="340" src="./img/Line_1.jpg" alt="кухня">
+                </div>
+                <h3 class="card__title">
+                  Прованс
+                </h3>
+                <p class="card__desc">
+                  Этот стиль порадует истинного ценителя провинциального французского интерьера, привнеся нотки деревенского шарма, 
+                  сохранив при этом изящность французского дома              </p>
               </div>
-              <h3 class="card__title">
-                Прованс
-              </h3>
-              <p class="card__desc">
-                Этот стиль порадует истинного ценителя провинциального французского интерьера, привнеся нотки деревенского шарма, 
-                сохранив при этом изящность французского дома              </p>
-            </div>
-            <div class="kitchens__big-card card card_big">
-              <div class="card__img-wraper card__img-wraper_big">
-                <img class="card__img card__img_big" src="./img/Angle_1.jpg" alt="кухня">
+              <div class="products__big-card card card_big">
+                <div class="card__img-wrap card__img-wrap_big">
+                  <img class="card__img" width="560" height="340" src="./img/Angle_1.jpg" alt="кухня">
+                </div>
+                <h3 class="card__title">
+                  Японский стиль
+                </h3>
+                <p class="card__desc">
+                  Это разновидность этнических направлений в минимализме, в которой присутствуют безукоризненные цветовые комбинации и лаконичность форм в сочетании с нестандартными решениями в оформлении              </p>
               </div>
-              <h3 class="card__title">
-                Японский стиль
-              </h3>
-              <p class="card__desc">
-                Это разновидность этнических направлений в минимализме, в которой присутствуют безукоризненные цветовые комбинации и лаконичность форм в сочетании с нестандартными решениями в оформлении              </p>
             </div>
-          </div>
-        </div>
       </section>
-      <section class="main__section form-block">
-        <div class="form-block__container container">
+      <section class="main__form-block form-block">
           <h2 class="form-block__title title">
             Оставьте заявку
           </h2>
@@ -210,9 +202,9 @@
           </p>
 
           <form class="form-block__form form" action="#">
-            <fieldset class="form__fieldset flex">
+            <fieldset class="form__fieldset">
                 <legend hidden>Форма для заявки</legend>    
-                <ul class="form__list list-reset flex" aria-label="Форма для заявки">
+                <ul class="form__list" aria-label="Форма для заявки">
                     <li class="form__item">
                     <label>
                         <input class="form__input input" type="text" name="name"
@@ -225,23 +217,21 @@
                     </label>
                     </li>
                     <li class="form__item">
-                    <input class="btn btn_gb_ogange btn-reset form__btn" type="submit" value="Отправить">
+                    <input class="btn btn_gb_ogange form__btn" type="submit" value="Отправить">
                     </li>
                 </ul>
             </fieldset>
           </form>
-        </div>
       </section>
 
-      <section class="main__section materials">
-        <div class="container materials__container">
-          <h2 class="materials__title title">
+      <section class="main__products products main__products_bot">
+          <h2 class="products__title title">
             Материал фасада кухонь
           </h2>
-          <div class="materials__cards flex">
-            <div class="materials__card card">
-              <div class="card__img-wraper">
-                <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+          <div class="products__list">
+            <div class="products__item card">
+              <div class="card__img-wrap">
+                <img class="card__img" width="360" height="230" src="./img/Line_1.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Плёнка
@@ -250,9 +240,9 @@
                 Данный материал примечателен своей долговечностью, светоустойчивостью, а также огромным многообразием фактур              
               </p>
             </div>
-            <div class="materials__card card">
-              <div class="card__img-wraper">
-                <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+            <div class="products__item card">
+              <div class="card__img-wrap">
+                <img class="card__img" width="360" height="230" src="./img/Line_2.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Древесная стружка
@@ -262,9 +252,9 @@
                 что их можно отмыть от любой грязи              
               </p>
             </div>
-            <div class="materials__card card">
-              <div class="card__img-wraper">
-                <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+            <div class="products__item card">
+              <div class="card__img-wrap">
+                <img class="card__img" width="360" height="230" src="./img/Line_3.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Шпон
@@ -274,9 +264,9 @@
                 из ценных древесных пород              
               </p>
             </div>
-            <div class="materials__card card">
-              <div class="card__img-wraper">
-                <img class="card__img" src="./img/Line_1.jpg" alt="кухня">
+            <div class="products__item card">
+              <div class="card__img-wrap">
+                <img class="card__img" width="360" height="230" src="./img/Line_1.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Массив
@@ -286,9 +276,9 @@
                 и солидностью, а также придаёт помещению благородный внешний вид              
               </p>
             </div>
-            <div class="materials__card card">
-              <div class="card__img-wraper">
-                <img class="card__img" src="./img/Line_2.jpg" alt="кухня">
+            <div class="products__item card">
+              <div class="card__img-wrap">
+                <img class="card__img" width="360" height="230" src="./img/Line_2.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Пластик
@@ -296,9 +286,9 @@
               <p class="card__desc">
                 Пластик отлично вписывается во все стили дизайна интерьера и позволяет воплотить различные дизайнерские фантазии            
               </div>
-            <div class="materials__card card">
-              <div class="card__img-wraper">
-                <img class="card__img" src="./img/Line_3.jpg" alt="кухня">
+            <div class="products__item card">
+              <div class="card__img-wrap">
+                <img class="card__img" width="360" height="230" src="./img/Line_3.jpg" alt="кухня">
               </div>
               <h3 class="card__title">
                 Эмаль
@@ -310,75 +300,79 @@
               </p>
             </div>
           </div>
+      </section>
+
+      <section class="main__servises servises servises_revers">
+            <div class="servises__info servises__info_about">
+              <h2 class="servises__title title">
+                О кухнях
+              </h2>
+              <p class="servises__text text">
+                Наша компания изготавливает кухни 
+                по индивидуальному проекту, 
+                что позволит самостоятельно выбрать 
+                стиль и цвет каждого изделия.
+              </p>
+              <p class="servises__text text">
+                У нас вы найдете более 1000 цветов фартуков с фотопечатью и более 100 вариантов дверных ручек, разновидностей фурнитуры, цветов столешниц, фасадов и стеновых изделий.
+              </p>
+              <button class="servises__btn btn btn_gb_ogange">
+                Заказать
+              </button>
+            </div>
+            <div class="servises__img servises__img_about">
+            </div>
+      </section>
+      <section class="main__servises servises">
+
+        <div class="servises__info servises__info_shipping">
+          <h2 class="servises__title title">
+            Доставка
+          </h2>
+          <p class="servises__text text">
+            Мы организуем транспортировку вашего заказа, и, при необходимости, наши сотрудники смогут сразу же произвести сборку и установку оборудования.
+          </p>
+          <p class="servises__text text">
+            Вы можете быть уверены в том, что все изделия будут перевезены в точном соответствии с установленными 
+            правилами перевозки.             
+          </p>
+        </div>
+        <div class="servises__img servises__img_shipping">
         </div>
       </section>
 
-      <section class="main__section servises">
-        <div class="container servises__container flex">
-          <div class="servises__img servises__img_about">
-          </div>
-          <div class="servises__info servises__info_about servises__info_ordered_2 flex">
-            <h2 class="servises__title servises__title_white title">
-              О кухнях
-            </h2>
-            <p class="servises__text servises__text_white text">
-              Наша компания изготавливает кухни 
-              по индивидуальному проекту, 
-              что позволит самостоятельно выбрать 
-              стиль и цвет каждого изделия.
-            </p>
-            <p class="servises__text servises__text_white text">
-              У нас вы найдете более 1000 цветов фартуков с фотопечатью и более 100 вариантов дверных ручек, разновидностей фурнитуры, цветов столешниц, фасадов и стеновых изделий.
-            </p>
-            <button class="servises__btn btn btn_gb_ogange btn-reset">
-              Заказать
-            </button>
-          </div>
-          <div class="servises__info servises__info_shipping servises__info_ordered_4 flex">
-            <h2 class="servises__title title">
-              Доставка
-            </h2>
-            <p class="servises__text text">
-              Мы организуем транспортировку вашего заказа, и, при необходимости, наши сотрудники смогут сразу же произвести сборку и установку оборудования.
-            </p>
-            <p class="servises__text text">
-              Вы можете быть уверены в том, что все изделия будут перевезены в точном соответствии с установленными 
-              правилами перевозки.             
-            </p>
-          </div>
-          <div class="servises__img servises__img_shipping">
-          </div>
-          <div class="servises__img servises__img_production">
-          </div>
-          <div class="servises__info servises__info_production servises__info_ordered_6 flex">
-            <h2 class="servises__title servises__title_white title">
-              У нас своё 
-              производство
-            </h2>
-            <p class="servises__text servises__text_white text">
-              Компания “Stoff” создана в апреле 2011 года инженером-технологом Дмитрием Николаевичем Важинским, имеет 
-              собственное производство 
-              и профессиональное оборудование.
-            </p>
-            <p class="servises__text servises__text_white text">
-              Вы можете посетить нас (Тюмень, ул.Комбинатская, д. 60, стр. 1) в любое удобное для вас время, предварительно записавшись 
-              к директору компании через сайт, 
-              либо по телефону +7 345 254 7078.
-            </p>
-            <button class="servises__btn btn btn_gb_ogange btn-reset">
-              Записаться
-            </button>
-          </div>
+      <section class="main__servises servises servises_revers">
+
+        <div class="servises__info servises__info_production">
+          <h2 class="servises__title title">
+            У нас своё 
+            производство
+          </h2>
+          <p class="servises__text text">
+            Компания “Stoff” создана в апреле 2011 года инженером-технологом Дмитрием Николаевичем Важинским, имеет 
+            собственное производство 
+            и профессиональное оборудование.
+          </p>
+          <p class="servises__text text">
+            Вы можете посетить нас (Тюмень, ул.Комбинатская, д. 60, стр. 1) в любое удобное для вас время, предварительно записавшись 
+            к директору компании через сайт, 
+            либо по телефону +7 345 254 7078.
+          </p>
+          <button class="servises__btn btn btn_gb_ogange">
+            Записаться
+          </button>
+        </div>
+        <div class="servises__img servises__img_production">
         </div>
       </section>
-      <section class="main__section offer">
-        <div class="container offer__container">
+      
+      <section class="main__offer">
           <h2 class="offer__title title">
             Что мы предлагаем
           </h2>
-          <div class="offer__wraper flex">
-            <div class="offer__card smoll-card">
-              <div class="smoll-card__icon">
+          <div class="offer__list">
+            <div class="offer__item small-card">
+              <div class="small-card__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                   <path d="M54.375 17.3439H48.2812V11.2502C48.2812 10.8772 48.1331 10.5195 47.8694 10.2558C47.6056 9.99207 47.248 9.84391 46.875 9.84391H37.6843C38.3213 7.13372 37.3555 4.03903 35.1341 2.14376C32.6484 0.0235993 29.3822 -0.0906585 26.25 1.78399C23.1179 -0.0910102 19.8516 0.0237164 17.366 2.14376C15.1445 4.03903 14.1788 7.13372 14.8158 9.84391H5.625C5.25204 9.84391 4.89435 9.99207 4.63063 10.2558C4.36691 10.5195 4.21875 10.8772 4.21875 11.2502V50.6252C4.21875 50.9981 4.36691 51.3558 4.63063 51.6195C4.89435 51.8833 5.25204 52.0314 5.625 52.0314H11.7188V58.1252C11.7188 58.4981 11.8669 58.8558 12.1306 59.1195C12.3944 59.3833 12.752 59.5314 13.125 59.5314H54.375C54.748 59.5314 55.1056 59.3833 55.3694 59.1195C55.6331 58.8558 55.7812 58.4981 55.7812 58.1252V18.7502C55.7812 18.3772 55.6331 18.0195 55.3694 17.7558C55.1056 17.4921 54.748 17.3439 54.375 17.3439ZM19.1914 4.28336C19.9283 3.63867 20.875 3.28485 21.8541 3.28821C22.9829 3.28821 24.2051 3.72977 25.4309 4.60821C25.6697 4.77937 25.9562 4.87142 26.25 4.87142C26.5438 4.87142 26.8303 4.77937 27.0691 4.60821C29.3557 2.96946 31.6298 2.8511 33.3086 4.28336C34.9946 5.72172 35.5649 8.20915 34.6351 10.0684C32.8766 13.5855 27.9437 16.3249 26.2492 17.1856C24.5544 16.3266 19.6281 13.5957 17.8649 10.0684C16.9351 8.20879 17.5054 5.72172 19.1914 4.28336ZM7.03125 12.6564H16.1429C19.1898 17.0567 25.3827 19.9011 25.6703 20.0311C25.8525 20.1136 26.0503 20.1563 26.2504 20.1563C26.4504 20.1563 26.6482 20.1136 26.8304 20.0311C27.1174 19.9011 33.3109 17.0567 36.3578 12.6564H45.4688V49.2189H7.03125V12.6564ZM52.9688 56.7189H14.5312V52.0314H46.875C47.248 52.0314 47.6056 51.8833 47.8694 51.6195C48.1331 51.3558 48.2812 50.9981 48.2812 50.6252V20.1564H52.9688V56.7189Z" fill="#F79C1B"/>
                   <path d="M22.5 27.6562H37.5C37.873 27.6562 38.2306 27.5081 38.4944 27.2444C38.7581 26.9806 38.9062 26.623 38.9062 26.25C38.9062 25.877 38.7581 25.5194 38.4944 25.2556C38.2306 24.9919 37.873 24.8438 37.5 24.8438H22.5C22.127 24.8437 21.7694 24.9919 21.5056 25.2556C21.2419 25.5194 21.0938 25.877 21.0938 26.25C21.0938 26.623 21.2419 26.9806 21.5056 27.2444C21.7694 27.5081 22.127 27.6562 22.5 27.6562Z" fill="#F79C1B"/>
@@ -389,30 +383,30 @@
                   <path d="M15 42.6562C15.7767 42.6562 16.4062 42.0267 16.4062 41.25C16.4062 40.4733 15.7767 39.8438 15 39.8438C14.2233 39.8438 13.5938 40.4733 13.5938 41.25C13.5938 42.0267 14.2233 42.6562 15 42.6562Z" fill="#F79C1B"/>
                 </svg>
               </div>
-              <h3 class="smoll-card__title">
+              <h3 class="small-card__title">
                 Сделаем по экскизу
               </h3>
-              <p class="smoll-card__desc">
+              <p class="small-card__desc">
                 Если у вас есть пожелания, изготовим кухню согласно вашим примерам
               </p>
             </div>
-            <div class="offer__card smoll-card">
-              <div class="smoll-card__icon">
+            <div class="offer__item small-card">
+              <div class="small-card__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                   <path d="M10.0195 0V60H49.9805V0H10.0195ZM38.4718 3.51562L37.8859 7.03125H22.1141L21.5282 3.51562H38.4718ZM46.4648 56.4844H13.5352V3.51562H17.964L19.1359 10.5469H40.8641L42.036 3.51562H46.4648V56.4844Z" fill="#F79C1B"/>
                   <path d="M23.2031 49.4531H36.7969V52.9688H23.2031V49.4531Z" fill="#F79C1B"/>
                   <path d="M30.0003 35.93C28.5166 35.93 27.3096 34.9722 27.3096 33.7951H23.7939C23.7939 36.3552 25.6736 38.523 28.2425 39.2149V41.1701H31.7581V39.2149C34.327 38.5231 36.2068 36.3552 36.2068 33.7951C36.2068 30.6794 33.4225 28.1447 30.0003 28.1447C28.5166 28.1447 27.3096 27.1869 27.3096 26.0097C27.3096 24.8326 28.5166 23.8748 30.0003 23.8748C31.484 23.8748 32.6912 24.8326 32.6912 26.0097H36.2068C36.2068 23.4497 34.327 21.2818 31.7581 20.5899V18.6348H28.2425V20.5899C25.6736 21.2817 23.7939 23.4497 23.7939 26.0097C23.7939 29.1254 26.5781 31.6603 30.0003 31.6603C31.484 31.6603 32.6912 32.6179 32.6912 33.7951C32.6912 34.9722 31.484 35.93 30.0003 35.93Z" fill="#F79C1B"/>
                 </svg>
               </div>
-              <h3 class="smoll-card__title">
+              <h3 class="small-card__title">
                 Подстроимся под бюджет
               </h3>
-              <p class="smoll-card__desc">
+              <p class="small-card__desc">
                 Для  эскиза подберем материалы эконом, стандарт или премиум класса              
               </p>
             </div>
-            <div class="offer__card smoll-card">
-              <div class="smoll-card__icon">
+            <div class="offer__item small-card">
+              <div class="small-card__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                   <g clip-path="url(#clip0_1144_277)">
                     <path d="M52.0067 7.98417C37.4063 7.98417 30.8603 0.448909 30.7673 0.339876C30.3872 -0.11526 29.611 -0.11426 29.2318 0.340876C29.1678 0.416899 22.6929 7.98317 7.99346 7.98317C7.4413 7.98317 6.99316 8.4313 6.99316 8.98347V28.0742C6.99316 38.5103 11.6846 48.4283 19.5429 54.6032C22.7109 57.0929 26.1329 58.8944 29.715 59.9568C29.808 59.9848 29.904 59.9988 30.0001 59.9988C30.0961 59.9988 30.1911 59.9848 30.2852 59.9568C33.8672 58.8934 37.2893 57.0929 40.4572 54.6032C48.3156 48.4273 53.007 38.5103 53.007 28.0742V8.98447C53.007 8.43231 52.5598 7.98417 52.0067 7.98417ZM51.0064 28.0752C51.0064 37.9021 46.601 47.2319 39.2208 53.0317C36.337 55.2984 33.236 56.9529 30.0001 57.9542C26.7641 56.9539 23.6632 55.2984 20.7793 53.0317C13.3991 47.2329 8.99376 37.9021 8.99376 28.0752V9.97377C21.2394 9.70168 27.8644 4.47512 30.0001 2.4265C32.1357 4.47612 38.7607 9.70168 51.0064 9.97377V28.0752Z" fill="#F79C1B"/>
@@ -425,16 +419,16 @@
                   </defs>
                 </svg>
               </div>
-              <h3 class="smoll-card__title">
+              <h3 class="small-card__title">
                 Гарантия 5 лет              
               </h3>
-              <p class="smoll-card__desc">
+              <p class="small-card__desc">
                 Наша компания занимается изготовлением мебели много лет, 
                 мы отвечаем за качество              
               </p>
             </div>
-            <div class="offer__card smoll-card">
-              <div class="smoll-card__icon">
+            <div class="offer__item small-card">
+              <div class="small-card__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
                   <g clip-path="url(#clip0_1144_237)">
                     <path d="M15.9066 42.0118C15.6887 41.7938 15.3863 41.6685 15.0781 41.6685C14.7688 41.6685 14.4676 41.7938 14.2496 42.0118C14.0305 42.2298 13.9062 42.5321 13.9062 42.8403C13.9062 43.1485 14.0305 43.4509 14.2496 43.6688C14.4676 43.8868 14.7688 44.0122 15.0781 44.0122C15.3863 44.0122 15.6887 43.8868 15.9066 43.6688C16.1246 43.4509 16.25 43.1485 16.25 42.8403C16.25 42.5321 16.1246 42.2298 15.9066 42.0118Z" fill="#F79C1B"/>
@@ -453,26 +447,16 @@
                   </defs>
                 </svg>
               </div>
-              <h3 class="smoll-card__title">
+              <h3 class="small-card__title">
                 Проект на этапе ремонта
               </h3>
-              <p class="smoll-card__desc">
+              <p class="small-card__desc">
                 Предусмотрим все нюансы и дадим рекомендации
                 по расположению элементов кухни              
               </p>
             </div>
           </div>
-        </div>
       </section>
-
-
-
     </main>
-
-    <!-- <picture>
-        <source media="(min-width: 768px)" srcset="large.jpg">
-        <source media="(min-width: 480px)" srcset="medium.jpg">
-        <img src="small.jpg" alt="Responsive image">
-      </picture> -->
   </body>
 </html>
